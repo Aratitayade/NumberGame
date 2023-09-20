@@ -1,6 +1,3 @@
-
-
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -9,12 +6,10 @@ public class NumberGame {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         
-        int minRange = 1;
-
-        int maxRange = 100;
-        
-        int maxAttempts = 10;
-        
+          int minRange = 1;
+          int maxRange = 100;
+          int maxAttempts = 10;
+          
         int score = 0;
         boolean playAgain = true;
         
@@ -24,7 +19,7 @@ public class NumberGame {
             int targetNumber = random.nextInt(maxRange - minRange + 1) + minRange;
             int attempts = 0;
             
-            System.out.println("I've selected a number between " + minRange + " and " + maxRange + ". Try to guess it!");
+            System.out.println("I've selected a number between " + minRange + " and " + maxRange+ ". Try to guess it!");
 
             while (attempts < maxAttempts) {
                 System.out.print("Enter your guess: ");
